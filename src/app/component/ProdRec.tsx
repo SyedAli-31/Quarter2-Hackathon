@@ -9,24 +9,24 @@ import Thirdhero from "./Thirdhero";
 const ProdRec = () => {
   return (
     <div>
-      <div className="grid grid-cols-2  ">
+      <div className="grid md:grid-cols-2  gap-0"> {/* Removed gap for mobile */}
         {/* Image Section */}
-        <div className="mt-[60px] h-[800px] flex items-center">
+        <div className="md:mt-[60px] h-[400px] md:h-[800px] flex md:items-center">
           <Image
             src="/prod1.png"
             alt="block"
             width={720}
             height={760}
-            className="w-[710px] h-[760] object-cover"
+            className="md:w-[710px] w-[340px] h-[400px] md:h-[760] object-cover"
           />
         </div>
         {/* Text Box */}
-        <div className=" bg-[#F9F9F9] w-[710px] h-[760px] shadow-lg p-8 flex flex-col mt-[80px] ">
-          <h2 className="w-[460px]  text-[24px] font-normal text-[#2A254B] ml-[92px] ">
+        <div className="bg-[#F9F9F9] w-[340px] md:w-[710px] h-[800px] md:h-[760px] shadow-lg p-8 flex flex-col md:mt-[80px] mt-0">
+          <h2 className="w-[460px] text-[24px] font-normal text-[#2A254B] md:ml-[92px]">
             <span>The Dandy Chair</span> <br />
             <span>£250</span>
           </h2>
-          <div className="w-[536px] text-[#2A254B] text-[16px] leading-[27px] mt-6 ml-[92px] ">
+          <div className="w-[200px] md:w-[536px] text-[#2A254B] text-[16px] leading-[27px] mt-6 ml:4 md:ml-[92px]">
             Description <br />
             <br />A timeless design, with premium materials features as one of
             our most popular and iconic pieces. The dandy chair is perfect for
@@ -49,9 +49,9 @@ const ProdRec = () => {
                 <span>75cm</span>
                 <span>50cm</span>
               </div>
-              <div className="grid grid-cols-2 mt-[60px]">
+              <div className="grid md:grid-cols-2 md:mt-[60px]">
                 <AmountInput />
-                <button className="w-[140px]  bg-[#2A254B] text-[#FFFFFF] px-6 py-3 shadow hover:bg-red-500  ml-[92px]">
+                <button className="w-[140px] mt-[30px] md:mt-0 bg-[#2A254B] text-[#FFFFFF] px-6 py-3 shadow hover:bg-red-500 ml-5 md:ml-[92px]">
                   <Link href="/Cart"> Add to cart</Link>
                 </button>
               </div>
@@ -59,8 +59,10 @@ const ProdRec = () => {
           </div>
         </div>
       </div>
-      <div className="text-[#2A254B] font-normal h-[80px] text-[32px] ml-[100px] mt-6">You Might Also Like</div>
-      <Thirdhero/>
+      <div className="text-[#2A254B] font-normal h-[80px] text-[20px] md:text-[32px] ml-[100px] mt-6">
+        You Might Also Like
+      </div>
+      <Thirdhero />
       <SecHero />
     </div>
   );

@@ -7,14 +7,14 @@ import Link from 'next/link';
 const SecHero = () => {
   return (
     <div>
-        <section className= "h-[450px] text-gray-600 body-font ml-18">
+        <section className= "w-[320px] md:w-full md:h-[450px] text-gray-600 body-font ml-18">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap w-full mb-20">
       <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
         
         
       </div>
-      <p className="w-full leading-[33.6px] text-[24px] font-normal text-[#2A254B] text-center">
+      <p className="w-full leading-[33.6px] text-[22px] md:text-[24px] font-normal text-[#2A254B] text-center">
       What makes our brand different
       </p>
     </div>

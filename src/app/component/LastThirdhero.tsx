@@ -1,73 +1,121 @@
 import React from "react";
-import Link from "next/link";
+
 const LastThirdhero = () => {
   return (
     <div>
       <section>
-        <div className="container px-5 mx-auto ml-20">
-          <div className="flex flex-wrap -m-4">
-            <div className="md:w-[305px] h-[375px] p-4">
+        <div className="container px-5 mx-auto">
+          <div className="grid md:mr-0 mr-14 grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Product 1 */}
+            <div className="p-2">
               <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
                 src="/parent1.png"
-                alt="content"
+                alt="The Dandy chair"
               />
-              <div className="mt-5 text-start text-[20px] font-normal">
+              <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">The Dandy chair</a>
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    The Dandy chair
+                  </a>
                 </p>
                 <p>
-                  
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">£250</a>
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    £250
+                  </a>
                 </p>
               </div>
             </div>
-            <div className="md:w-[305px] h-[375px] p-4">
+
+            {/* Product 2 */}
+            <div className="p-2">
               <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
                 src="/parent2.png"
-                alt="content"
+                alt="Rustic Vase Set"
               />
-              <div className="mt-5 text-start text-[20px] font-normal">
+              <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
                     Rustic Vase Set
                   </a>
                 </p>
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
                     £155
                   </a>
                 </p>
               </div>
             </div>
-            <div className="md:w-[305px] h-[375px] p-4">
+
+            {/* Product 3 */}
+            <div className="p-2">
               <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
                 src="/parent3.png"
-                alt="content"
+                alt="The Silky Vase"
               />
-              <div className="mt-5 text-start text-[20px] font-normal">
-                <p ><a href="#" className="hover:text-blue-500 hover:underline  ">The Silky Vase</a></p>
-                <p  ><a href="#" className="hover:text-blue-500 hover:underline  ">£125</a></p>
+              <div className="text-start text-[16px] md:text-[20px] font-normal">
+                <p>
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    The Silky Vase
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    £125
+                  </a>
+                </p>
               </div>
             </div>
-            <div className="md:w-[305px] h-[375px] p-4">
+
+            {/* Product 4 */}
+            <div className="p-2">
               <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
                 src="/parent4.png"
-                alt="content"
+                alt="The Lucy Lamp"
               />
-              <div className="mt-5 text-start text-[20px] font-normal">
-                <p><a href="#" className="hover:text-blue-500 hover:underline  ">The Lucy Lamp</a></p>
-                <p ><a href="#" className="hover:text-blue-500 hover:underline  ">£399</a></p>
+              <div className="text-start text-[16px] md:text-[20px] font-normal">
+                <p>
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    The Lucy Lamp
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    £399
+                  </a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Center the button */}
-      
     </div>
   );
 };

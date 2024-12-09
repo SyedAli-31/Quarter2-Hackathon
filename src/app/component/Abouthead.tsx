@@ -7,13 +7,13 @@ import Link from "next/link";
 export default function Abouthead() {
   return (
     <div>
-      <div className=" grid lg:grid-cols-[20px_1050px_600px] mt-2 items-center">
+      <div className=" grid md:grid-cols-[15px_1000px_350px] mt-2 md:items-center">
         <div className="ml-2 text-[24px] font-normal">
         <Link href="/ ">
           Avion
           </Link>
         </div>
-        <div className="text-center  ml-[100px] text-text">
+        <div className="text-center  md:ml-[100px] text-text">
           
         </div>
         <div className="flex gap-8">
@@ -30,7 +30,7 @@ export default function Abouthead() {
         </div>
       </div>
 
-      <div className="h-[1px] w-[1350px] ml-5 bg-[#0000001A]" />
+      <div className="h-[1px] md:w-[1350px] ml-5 bg-[#0000001A]" />
       <Navbar />
     </div>
   );

@@ -8,8 +8,8 @@ import { IoLogoPinterest } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto px-4">
+    <footer className="md:w-full w-[340px] bg-gray-900 text-white py-8">
+      <div className="container md:mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-[200px_200px_200px_600px] gap-8">
           <div>
             <h3 className="font-bold mb-4 text-[16px] ">Menu</h3>
@@ -48,8 +48,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Join Our Mailing List</h3>
             <form className='flex'>
-              <input type="email" placeholder="your@email.com" className="w-[590px] h-[55px] border border-gray-700 rounded-l-md px-4 py-2 mb-4" />
-              <button type="submit" className="w-[90px] h-[55px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r">SignUp</button>
+              <input type="email" placeholder="your@email.com" className="md:w-[590px] h-[55px] border border-gray-700 rounded-l-md px-4 py-2 mb-4" />
+              <button type="submit" className="w-[60px] md:w-[90px] h-[55px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 md:px-4 rounded-r">SignUp</button>
             </form>
           </div>
         </div>
