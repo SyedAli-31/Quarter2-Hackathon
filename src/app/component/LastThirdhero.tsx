@@ -15,18 +15,12 @@ const LastThirdhero = () => {
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     The Dandy chair
                   </a>
                 </p>
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     £250
                   </a>
                 </p>
@@ -42,18 +36,12 @@ const LastThirdhero = () => {
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     Rustic Vase Set
                   </a>
                 </p>
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     £155
                   </a>
                 </p>
@@ -69,18 +57,12 @@ const LastThirdhero = () => {
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     The Silky Vase
                   </a>
                 </p>
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     £125
                   </a>
                 </p>
@@ -96,18 +78,12 @@ const LastThirdhero = () => {
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     The Lucy Lamp
                   </a>
                 </p>
                 <p>
-                  <a
-                    href="#"
-                    className="hover:text-blue-500 hover:underline"
-                  >
+                  <a href="#" className="hover:text-blue-500 hover:underline">
                     £399
                   </a>
                 </p>

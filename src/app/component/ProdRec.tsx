@@ -9,7 +9,9 @@ import Thirdhero from "./Thirdhero";
 const ProdRec = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-2  gap-0"> {/* Removed gap for mobile */}
+      <div className="grid md:grid-cols-2  gap-0">
+        {" "}
+        {/* Removed gap for mobile */}
         {/* Image Section */}
         <div className="md:mt-[60px] h-[400px] md:h-[800px] flex md:items-center">
           <Image

@@ -25,7 +25,9 @@ const AboutFooter = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {/* Social Links */}
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[16px]">Social Links</h3>
+              <h3 className="text-lg font-bold mb-4 text-[16px]">
+                Social Links
+              </h3>
               <div className="flex space-x-4 mt-2">
                 <a href="#" className="text-white hover:text-gray-300">
                   <FaLinkedin />
@@ -50,7 +52,9 @@ const AboutFooter = () => {
 
             {/* Our Company Links */}
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[16px]">Our Company</h3>
+              <h3 className="text-lg font-bold mb-4 text-[16px]">
+                Our Company
+              </h3>
               <ul className="space-y-2 text-[14px]">
                 <li>
                   <a href="#" className="hover:text-gray-300">

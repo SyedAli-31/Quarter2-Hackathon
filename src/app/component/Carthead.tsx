@@ -9,20 +9,17 @@ export default function Carthead() {
     <div>
       <div className="grid lg:grid-cols-[20px_1080px_300px] mt-2 items-center">
         <div className="ml-2">
-        <FiSearch className="w-[24px] h-[24px]"/>
+          <FiSearch className="w-[24px] h-[24px]" />
         </div>
         <div className="text-center text-[24px] font-normal flex justify-center ml-[300px] text-text">
-        <Link href="/ ">
-          Avion
-          </Link>
+          <Link href="/ ">Avion</Link>
         </div>
         <div className="flex gap-8 justify-end">
-           
           <div className="flex gap-4 mt-1">
-          <Link href="/Cart">
-          <FaShoppingCart />
-          </Link>
-            
+            <Link href="/Cart">
+              <FaShoppingCart />
+            </Link>
+
             <VscAccount />
           </div>
         </div>

@@ -5,12 +5,13 @@ const Recent = () => {
   return (
     <div className="grid md:grid-cols-2 md:gap-4">
       {/* Text Box */}
-      <div className="bg-[#2A254B] w-[340px] md:w-[600px] h-[450px] shadow-lg p-8 flex flex-col justify-center mt-[60px] md:ml-[100px]">
+      <div className="bg-[#2A254B] w-[389px] md:w-[600px] h-[450px] shadow-lg p-8 flex flex-col justify-center mt-[60px] md:ml-[100px]">
         <h2 className="text-[32px] font-normal text-[#FFFFFF]">
           It started with a small idea
         </h2>
         <p className="text-[#FFFFFF] text-[18px] leading-[27px] mt-6">
-          A global brand with local beginnings, our story began in a small studio in South London in early 2014
+          A global brand with local beginnings, our story began in a small
+          studio in South London in early 2014
         </p>
         <button className="w-[170px] bg-[#F9F9F926] text-[#FFFFFF] px-6 py-3 rounded shadow hover:bg-gray-200 mt-[160px]">
           View Collection
@@ -24,7 +25,7 @@ const Recent = () => {
           alt="block"
           width={600}
           height={450}
-          className="md:w-[600px] w-[340px] md:h-full object-cover"
+          className="md:w-[600px] w-[389px] md:h-full object-cover"
         />
       </div>
     </div>

@@ -20,7 +20,7 @@ const Page = () => {
       alt='joint'
       width={1440}
       height={444}
-      className='md:mt-[60px] mt-[30px] md:w-[1440px] w-[340px]'
+      className='md:mt-[60px] mt-[30px] md:w-[1440px] w-[389px]'
       />
       <Footer/>
     </div>

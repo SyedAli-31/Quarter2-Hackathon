@@ -1,5 +1,5 @@
-"use client"
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 function AmountInput() {
   const [amount, setAmount] = useState(1);
@@ -16,7 +16,9 @@ function AmountInput() {
 
   return (
     <div className="flex items-center mt-8">
-      <span className="mr-2 text-[#2A254B] text-[16px] font-normal ">Amount:</span>
+      <span className="mr-2 text-[#2A254B] text-[16px] font-normal ">
+        Amount:
+      </span>
       <button
         onClick={handleDecrement}
         className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-2 rounded-l"

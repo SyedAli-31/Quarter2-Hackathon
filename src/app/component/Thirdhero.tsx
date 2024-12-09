@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Thirdhero = () => {
   return (
     <div>
@@ -7,26 +8,33 @@ const Thirdhero = () => {
         <div className="container px-5 mx-auto md:ml-20">
           <div className="flex flex-wrap -m-4">
             <div className="md:w-[305px] md:h-[375px] p-4">
-              <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+              <Image
                 src="/parent1.png"
                 alt="content"
+                width={370}
+                height={375}
+                className="md:w-[305px] md:h-[375px] object-cover object-center mb-6"
               />
               <div className="mt-5 text-start text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">The Dandy chair</a>
+                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                    The Dandy chair
+                  </a>
                 </p>
                 <p>
-                  
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">£250</a>
+                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                    £250
+                  </a>
                 </p>
               </div>
             </div>
             <div className="md:w-[305px] md:h-[375px] p-4">
-              <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+              <Image
                 src="/parent2.png"
                 alt="content"
+                width={370}
+                height={375}
+                className="md:w-[305px] md:h-[375px] object-cover object-center mb-6"
               />
               <div className="mt-5 text-start text-[20px] font-normal">
                 <p>
@@ -42,34 +50,54 @@ const Thirdhero = () => {
               </div>
             </div>
             <div className="md:w-[305px] md:h-[375px] p-4">
-              <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+              <Image
                 src="/parent3.png"
                 alt="content"
+                width={370}
+                height={375}
+                className="md:w-[305px] md:h-[375px] object-cover object-center mb-6"
               />
               <div className="mt-5 text-start text-[20px] font-normal">
-                <p ><a href="#" className="hover:text-blue-500 hover:underline  ">The Silky Vase</a></p>
-                <p  ><a href="#" className="hover:text-blue-500 hover:underline  ">£125</a></p>
+                <p>
+                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                    The Silky Vase
+                  </a>
+                </p>
+                <p>
+                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                    £125
+                  </a>
+                </p>
               </div>
             </div>
             <div className="md:w-[305px] md:h-[375px] p-4">
-              <img
-                className="w-[305px] h-[375px] object-cover object-center mb-6"
+              <Image
                 src="/parent4.png"
                 alt="content"
+                width={370}
+                height={375}
+                className="md:w-[305px] md:h-[375px] object-cover object-center mb-6"
               />
               <div className="mt-5 text-start text-[20px] font-normal">
-                <p><a href="#" className="hover:text-blue-500 hover:underline  ">The Lucy Lamp</a></p>
-                <p ><a href="#" className="hover:text-blue-500 hover:underline  ">£399</a></p>
+                <p>
+                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                    The Lucy Lamp
+                  </a>
+                </p>
+                <p>
+                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                    £399
+                  </a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* Center the button */}
-      <div className="flex justify-center mt-[150px]">
-        <button className="w-[170px] bg-[#F9F9F9] text-[#2A254B]  text-[16px] px-6 py-3 rounded-lg shadow hover:bg-gray-200 flex md:text-center md:justify-center">
-         <Link href="/AllProducts"> View Collection</Link>
+      <div className="flex justify-center mt-[10px] md:mt-[150px]">
+        <button className="w-[370px] md:w-[170px] md:ml-0 ml-2 bg-gray-100 text-[#2A254B] px-6 py-3 rounded-lg shadow hover:bg-red-400 mt-[60px] md:mt-auto ">
+          <Link href="/ProdListing">View Collection</Link>
         </button>
       </div>
     </div>
