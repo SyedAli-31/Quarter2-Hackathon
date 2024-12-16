@@ -15,7 +15,7 @@ const ProdNav = () => {
       {/* Navigation Bar */}
       <div className="w-full md:w-[1350px] grid grid-cols-[50%_50%] md:grid-cols-[90px_1000px_280px] mt-2 items-center mx-auto">
         {/* Logo: Avion */}
-        <div className="ml-4 md:ml-0 text-[24px] font-normal">
+        <div className="ml-4 md:ml-0 text-[#22202E] text-[24px] font-normal">
           <Link href="/">Avion</Link>
         </div>
 
@@ -26,12 +26,12 @@ const ProdNav = () => {
 
         {/* Icons and Hamburger Menu */}
         <div className="flex gap-4 justify-end items-center mr-4 md:mr-0">
-          <FiSearch className="w-[20px] h-[20px]" />
-          <FaShoppingCart className="w-[20px] h-[20px]" />
-          <VscAccount className="w-[20px] h-[20px]" />
+          <FiSearch className="w-[20px] h-[20px] text-[#22202E]" />
+          <FaShoppingCart className="w-[20px] h-[20px] text-[#22202E]" />
+          <VscAccount className="w-[20px] h-[20px] text-[#22202E]" />
           {/* Hamburger Icon for Mobile */}
           <FiMenu
-            className="w-[24px] h-[24px] cursor-pointer md:hidden"
+            className="w-[24px] h-[24px] cursor-pointer md:hidden text-[#22202E]"
             onClick={() => setSidebarOpen(true)}
           />
         </div>
@@ -48,12 +48,12 @@ const ProdNav = () => {
             {/* Close Button */}
             <div className="flex justify-end mb-4">
               <AiOutlineClose
-                className="w-[24px] h-[24px] cursor-pointer"
+                className="w-[24px] h-[24px] cursor-pointer text-[#22202E]"
                 onClick={() => setSidebarOpen(false)}
               />
             </div>
             {/* Sidebar Links */}
-            <ul className="space-y-6 text-lg font-medium">
+            <ul className="space-y-6 text-lg font-medium text-[#22202E]">
               <li>
                 <Link href="/AboutUs">
                   <span className="cursor-pointer hover:text-gray-600">About Us</span>

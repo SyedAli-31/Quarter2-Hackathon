@@ -20,7 +20,7 @@ const AboutUs = () => {
       </div>
       <Abouthead />
       <div className="grid md:grid-cols-[70%_30%]">
-        <span className=" md:text-[36px] md:w-full w-[340px] text-[30px] font-normal mt-[60px] ml-6 md:ml-0 md:mt-[120px] md:text-center ">
+        <span className=" md:text-[36px] text-[#22202E] md:w-full w-[340px] text-[30px] font-normal mt-[60px] ml-6 md:ml-0 md:mt-[120px] md:text-center ">
           A brand built on the love of craftmanship,
           <br />
           quality and outstanding customer service

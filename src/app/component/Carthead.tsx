@@ -60,7 +60,7 @@ export default function Carthead() {
           <div className="flex justify-between items-center p-4">
             <span className="text-xl text-[#22202E] font-bold">Menu</span>
             <AiOutlineClose
-              className="w-6 h-6 cursor-pointer"
+              className="w-6 h-6 cursor-pointer text-[#22202E]"
               onClick={toggleSidebar}
             />
           </div>
