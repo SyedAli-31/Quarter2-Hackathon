@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 import AmountInput from "./AmountInput";
 import Link from "next/link";
 import SecHero from "./SecHero";
@@ -18,12 +17,12 @@ const ProdRec = () => {
             src="/prod1.png"
             alt="block"
             width={720}
-            height={760}
-            className="md:w-[710px] w-[340px] h-[400px] md:h-[760] object-cover"
+            height={800}
+            className="md:w-[710px] w-[340px] h-[400px] md:h-[800] object-cover"
           />
         </div>
         {/* Text Box */}
-        <div className="bg-[#F9F9F9] w-[340px] md:w-[710px] h-[800px] md:h-[760px] shadow-lg p-8 flex flex-col md:mt-[80px] mt-0">
+        <div className="bg-[#F9F9F9] w-[340px] md:w-[710px]  h-[800px] md:h-[800px] shadow-lg p-8 flex flex-col md:mt-[60px] mt-0">
           <h2 className="w-[460px] text-[24px] font-normal text-[#2A254B] md:ml-[92px]">
             <span>The Dandy Chair</span> <br />
             <span>£250</span>

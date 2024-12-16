@@ -1,6 +1,5 @@
 import React from "react";
 import { TbTruckDelivery } from "react-icons/tb";
-
 import ProdNav from "../component/ProdNav";
 import ProdRec from "../component/ProdRec";
 import Aboutlast from "../component/Aboutlast";
