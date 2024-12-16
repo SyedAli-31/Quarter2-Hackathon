@@ -31,9 +31,10 @@ export default function Topheader() {
 
         {/* Right Section: Mobile Icons */}
         <div className="flex items-center gap-6 mr-8 lg:hidden">
-          <FiSearch className="w-6 h-6 cursor-pointer" />
-          <FiMenu className="w-6 h-6 cursor-pointer" onClick={toggleSidebar} />
-        </div>
+  <FiSearch className="w-6 h-6 cursor-pointer text-red-500" />
+  <FiMenu className="w-6 h-6 cursor-pointer text-red-500" onClick={toggleSidebar} />
+</div>
+
 
         {/* Right Section: Links (Desktop only) */}
         <div className="hidden lg:flex gap-8 items-center">
@@ -66,7 +67,7 @@ export default function Topheader() {
             />
           </div>
           <div className="p-4">
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-[#22202E]">
               <li>
                 <Link href="/AboutUs">About Us</Link>
               </li>

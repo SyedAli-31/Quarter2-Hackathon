@@ -20,7 +20,7 @@ export default function Abouthead() {
       {/* Top Header */}
       <div className="flex justify-between items-center px-4 mt-2">
         {/* Left Section: Logo */}
-        <div className="text-[24px] font-normal">
+        <div className="text-[24px] text-[#22202E] font-normal">
           <Link href="/">Avion</Link>
         </div>
 
