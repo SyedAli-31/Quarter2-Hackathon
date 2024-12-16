@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const LastThirdhero = () => {
   return (
@@ -8,10 +9,12 @@ const LastThirdhero = () => {
           <div className="grid md:mr-0 mr-14 grid-cols-2 md:grid-cols-4 gap-4">
             {/* Product 1 */}
             <div className="p-2">
-              <img
-                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
+              <Image
                 src="/parent1.png"
                 alt="The Dandy chair"
+                width={305}
+                height={375}
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
@@ -29,10 +32,12 @@ const LastThirdhero = () => {
 
             {/* Product 2 */}
             <div className="p-2">
-              <img
-                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
+              <Image
                 src="/parent2.png"
                 alt="Rustic Vase Set"
+                width={305}
+                height={375}
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
@@ -50,10 +55,12 @@ const LastThirdhero = () => {
 
             {/* Product 3 */}
             <div className="p-2">
-              <img
-                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
+              <Image
                 src="/parent3.png"
                 alt="The Silky Vase"
+                width={305}
+                height={375}
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>
@@ -71,10 +78,12 @@ const LastThirdhero = () => {
 
             {/* Product 4 */}
             <div className="p-2">
-              <img
-                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
+              <Image
                 src="/parent4.png"
                 alt="The Lucy Lamp"
+                width={305}
+                height={375}
+                className="w-full h-[180px] md:w-[305px] md:h-[375px] object-cover object-center mb-4"
               />
               <div className="text-start text-[16px] md:text-[20px] font-normal">
                 <p>

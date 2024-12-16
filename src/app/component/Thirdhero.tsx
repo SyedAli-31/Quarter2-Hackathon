@@ -97,7 +97,7 @@ const Thirdhero = () => {
       {/* Center the button */}
       <div className="flex justify-center mt-[10px] md:mt-[150px]">
         <button className="w-[370px] md:w-[170px] md:ml-0 ml-2 bg-gray-100 text-[#2A254B] px-6 py-3 rounded-lg shadow hover:bg-red-400 mt-[60px] md:mt-auto ">
-          <Link href="/ProdListing">View Collection</Link>
+          <Link href="/AllProducts">View Collection</Link>
         </button>
       </div>
     </div>

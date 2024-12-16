@@ -3,7 +3,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { CiCreditCard1 } from "react-icons/ci";
 import { LuSprout } from "react-icons/lu";
-import Link from "next/link";
+
 const SecHero = () => {
   return (
     <div>

@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Carthead from "../component/Carthead";
-
-import { useState } from "react";
 import Footer from "../component/footer";
+import Image from "next/image";
 
 function ShoppingCart() {
-  const [cartItems, setCartItems] = useState([
+  const [cartItems] = useState([
     {
       id: 1,
       name: "Graystone vase",
@@ -58,10 +57,12 @@ function ShoppingCart() {
               <tr key={item.id}>
                 <td className=" border border-gray-300 p-4">
                   <div className="flex items-center">
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.name}
-                      className="w-[109px] h-[130px] mr-4"
+                      width={109}
+                      height={130}
+                      className="mr-4"
                     />
                     <div className="h-[110px]">
                       <p className="text-[20px] text-[#2A254B] font-normal">
