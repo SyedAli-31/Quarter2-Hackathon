@@ -27,7 +27,7 @@ const AboutUs = () => {
         </span>
         <span>
           {" "}
-          <button className="md:w-[170px] w-[389px]  bg-gray-100 text-[#2A254B] px-6 py-3 rounded-lg shadow hover:bg-red-200 mt-[60px] md:mt-[120px] md:ml-[100px] ">
+          <button className="md:w-[170px] w-[389px]  bg-gray-100 text-[#2A254B] px-6 py-3 rounded-lg shadow hover:bg-red-200 mt-[60px] md:mt-[120px] md:ml-[190px] ">
             <Link href="/ProdListing">View Our Products</Link>
           </button>
         </span>

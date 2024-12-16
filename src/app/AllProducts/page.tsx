@@ -15,7 +15,7 @@ const AllProducts = () => {
           alt="allprod"
           width={1440}
           height={200}
-          className="md:w-[1440px] w-[340px]"
+          className="md:w-[1440px] w-[389px]"
         />
         <div className="mt-[80px]">
           <LastThirdhero />
@@ -26,8 +26,8 @@ const AllProducts = () => {
             <LastThirdhero />
           </div>
           {/* Center the button */}
-          <div className="flex lg:justify-center mt-[80px] md:ml-0 ml-[80px] md:mt-[150px]">
-            <button className="w-[170px] bg-[#F9F9F9] text-[#2A254B]  text-[16px] px-6 py-3 rounded-lg shadow hover:bg-gray-200 flex text-center justify-center">
+          <div className="flex lg:justify-center mt-[80px] md:ml-0  md:mt-[150px]">
+            <button className="md:w-[170px] w-[388px] bg-[#F9F9F9] text-[#2A254B]  text-[16px] px-6 py-3 rounded-lg shadow hover:bg-gray-200 flex text-center justify-center">
               <Link href="/AllProducts"> View Collection</Link>
             </button>
           </div>

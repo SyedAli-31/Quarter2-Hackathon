@@ -8,7 +8,7 @@ import { IoLogoPinterest } from "react-icons/io";
 
 const AboutFooter = () => {
   return (
-    <footer className="bg-gray-900 md:w-full w-[340px] text-white py-8 ">
+    <footer className="bg-gray-900 md:w-full w-[389px] text-white py-8 ">
       <div className="container mx-auto px-4">
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8">

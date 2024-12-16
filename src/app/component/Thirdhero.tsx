@@ -17,14 +17,14 @@ const Thirdhero = () => {
               />
               <div className="mt-5 text-start text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     The Dandy chair
-                  </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing"className="hover:text-blue-500 hover:underline  ">
                     £250
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -38,14 +38,14 @@ const Thirdhero = () => {
               />
               <div className="mt-5 text-start text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     Rustic Vase Set
-                  </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     £155
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -59,14 +59,14 @@ const Thirdhero = () => {
               />
               <div className="mt-5 text-start text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     The Silky Vase
-                  </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     £125
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -80,14 +80,14 @@ const Thirdhero = () => {
               />
               <div className="mt-5 text-start text-[20px] font-normal">
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     The Lucy Lamp
-                  </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#" className="hover:text-blue-500 hover:underline  ">
+                  <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     £399
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

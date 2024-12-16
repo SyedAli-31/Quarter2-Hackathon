@@ -87,7 +87,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-[60px] md:w-[90px] h-[55px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 md:px-4 rounded-r"
+                className="w-[70px] md:w-[90px] h-[55px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 md:px-4 rounded-r"
               >
                 SignUp
               </button>

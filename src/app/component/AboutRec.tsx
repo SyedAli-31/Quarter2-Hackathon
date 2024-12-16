@@ -31,8 +31,8 @@ const AboutRecent = () => {
           </p>
           <span>
             {" "}
-            <button className="md:w-[170px] w-[389px]  bg-gray-100 text-[#2A254B] px-6 py-3 rounded-lg shadow hover:bg-red-200 mt-[60px] md:mt-[120px] md:ml-[100px] ">
-              View Our Products
+            <button className="md:w-[170px]  w-[300px]  bg-gray-100 text-[#2A254B] px-6 py-3 rounded-lg shadow hover:bg-red-200 mt-[60px] md:mt-[20px] md:ml-[90px] ">
+              Get In Touch
             </button>
           </span>
         </div>

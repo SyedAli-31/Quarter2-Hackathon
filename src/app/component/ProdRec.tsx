@@ -18,7 +18,7 @@ const ProdRec = () => {
             alt="block"
             width={720}
             height={800}
-            className="md:w-[710px] w-[340px] h-[400px] md:h-[800px] object-cover"
+            className="md:w-[720px] w-[389px] h-[400px] md:h-[800px] object-cover"
           />
         </div>
         {/* Text Box */}

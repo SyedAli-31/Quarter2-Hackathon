@@ -12,7 +12,7 @@ const Aboutlast = () => {
 
   return (
     <div className="bg-[#F9F9F9] h-[200px] md:h-[450px]">
-      <div className="bg-[#FFFFFF] md:w-[1270px] md:h-[360px] flex flex-col justify-center md:items-center md:ml-[90px]  md:translate-y-[45px]">
+      <div className="bg-[#FFFFFF] md:w-[1270px] w-[389px] md:h-[360px] flex flex-col justify-center md:items-center md:ml-[90px]  md:translate-y-[45px] ml-6">
         <h2 className="text-[#2A254B] text-[20px] md:text-[36px] font-normal md:ml-0 ml-2 mb-4">
           Join the club and get the benefits
         </h2>

@@ -7,8 +7,8 @@ import AboutFooter from "../component/AboutFooter";
 
 const ProdListing = () => {
   return (
-    <div>
-      <div className="h-[41px] md:w-[1425px] w-[340px] grid grid-cols-[65%_35%] bg-[#2A254B] text-[#FFFFFF] items-center text-[14px] font-normal ">
+    <div className="md:w-[1425px] w-[389px]">
+      <div className="h-[41px]  grid grid-cols-[65%_35%] bg-[#2A254B] text-[#FFFFFF] items-center text-[14px] font-normal ">
         <h2 className="flex text-end md:ml-[450px] ">
           <TbTruckDelivery className="w-[30px] md:w-[20px] md:mt-0 mt-2 h-[20px] mr-1" />
           Free delivery on all orders over £50 with code easter checkout

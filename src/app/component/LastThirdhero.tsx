@@ -6,7 +6,7 @@ const LastThirdhero = () => {
     <div>
       <section>
         <div className="container px-5 mx-auto">
-          <div className="grid md:mr-0 mr-14 grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid md:mr-0  grid-cols-2 md:grid-cols-4 gap-4">
             {/* Product 1 */}
             <div className="p-2">
               <Image
