@@ -9,7 +9,7 @@ const Thirdhero = () => {
           <div className="flex flex-wrap -m-4">
             <div className="md:w-[305px] md:h-[375px] p-4">
               <Image
-                src="/parent1.png"
+                src="/Parent1.png"
                 alt="content"
                 width={370}
                 height={375}
@@ -30,7 +30,7 @@ const Thirdhero = () => {
             </div>
             <div className="md:w-[305px] md:h-[375px] p-4">
               <Image
-                src="/parent2.png"
+                src="/Parent2.png"
                 alt="content"
                 width={370}
                 height={375}
