@@ -11,7 +11,7 @@ export default function Carthead() {
         <div className="ml-2">
           <FiSearch className="w-[24px] h-[24px]" />
         </div>
-        <div className="text-center text-[24px] font-normal flex justify-center ml-[300px] text-text">
+        <div className="text-center text-[24px] font-normal flex justify-center ml-[300px] text-[#22202E]">
           <Link href="/ ">Avion</Link>
         </div>
         <div className="flex gap-8 justify-end">

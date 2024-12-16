@@ -25,7 +25,7 @@ export default function Topheader() {
         </div>
 
         {/* Center Section: Logo */}
-        <div className="text-[24px] font-normal text-text md:text-center flex-1 lg:flex-none">
+        <div className="text-[24px] font-normal text-[#22202E] md:text-center flex-1 lg:flex-none">
           Avion
         </div>
 

@@ -10,7 +10,7 @@ const LastThirdhero = () => {
             {/* Product 1 */}
             <div className="p-2">
               <Image
-                src="/parent1.png"
+                src="/Parent1.png"
                 alt="The Dandy chair"
                 width={305}
                 height={375}
@@ -33,7 +33,7 @@ const LastThirdhero = () => {
             {/* Product 2 */}
             <div className="p-2">
               <Image
-                src="/parent2.png"
+                src="/Parent2.png"
                 alt="Rustic Vase Set"
                 width={305}
                 height={375}

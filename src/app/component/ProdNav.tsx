@@ -12,7 +12,7 @@ const ProdNav = () => {
           <div className="ml-2 text-[24px] font-normal">
             <Link href="/ ">Avion</Link>
           </div>
-          <div className="text-center  ml-[180px] text-text">
+          <div className="text-center  ml-[180px] text-[#22202E]">
             <Navbar />
           </div>
 

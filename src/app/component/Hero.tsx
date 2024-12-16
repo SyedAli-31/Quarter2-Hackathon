@@ -18,10 +18,10 @@ const Hero = () => {
 
       {/* Text Box */}
       <div className="   md:absolute md:right-10 md:top-1/2 md:transform md:-translate-y-1/2 w-[389px] h-[290px] md:w-[600px] md:h-[450px] bg-white shadow-lg  md:p-8 flex flex-col mt-8 md:mt-0 md:ml-8 ">
-        <h2 className="text-[24px] md:ml-0 ml-8 font-normal text-text md:text-[32px]">
+        <h2 className="text-[24px] md:ml-0 ml-8 font-normal text-[#22202E] md:text-[32px]">
           Luxury homeware for people
         </h2>
-        <p className="text-[24px] md:ml-0 ml-4  font-normal mt-1 text-text md:text-[32px]">
+        <p className="text-[24px] md:ml-0 ml-4  font-normal mt-1 text-[#22202E] md:text-[32px]">
           Who love timeless design quality
         </p>
         <p className="text-[#5B5676] md:ml-0 ml-6 text-[18px] leading-[24px] mt-4 md:mt-6">
