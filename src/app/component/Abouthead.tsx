@@ -25,13 +25,13 @@ export default function Abouthead() {
         </div>
 
         {/* Right Section: Mobile Icons */}
-        <div className="flex items-center gap-4 lg:hidden">
+        <div className="flex items-center gap-4 text-[#22202E] lg:hidden">
           <FiSearch className="w-5 h-5 cursor-pointer" />
           <FiMenu className="w-6 h-6 cursor-pointer" onClick={toggleSidebar} />
         </div>
 
         {/* Right Section: Links (Desktop only) */}
-        <div className="hidden lg:flex gap-8 items-center">
+        <div className="hidden lg:flex gap-8 text-[#22202E] items-center">
           <Link href="/AboutUs">About Us</Link>
           <a href="#">Contact</a>
           <a href="#">Blog</a>
@@ -53,14 +53,14 @@ export default function Abouthead() {
       {isSidebarOpen && (
         <div className="fixed top-0 left-0 w-[250px] h-full bg-white shadow-lg z-50">
           <div className="flex justify-between items-center p-4">
-            <span className="text-xl font-bold">Menu</span>
+            <span className="text-xl text-[#22202E] font-bold">Menu</span>
             <AiOutlineClose
               className="w-6 h-6 cursor-pointer"
               onClick={toggleSidebar}
             />
           </div>
           <div className="p-4">
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-[#22202E]">
               <li>
                 <Link href="/AboutUs">About Us</Link>
               </li>

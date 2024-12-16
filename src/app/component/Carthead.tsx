@@ -20,7 +20,7 @@ export default function Carthead() {
       <div className="flex justify-between items-center px-4 mt-2">
         {/* Left Section: Search Icon */}
         <div className="hidden lg:block">
-          <FiSearch className="w-6 h-6 cursor-pointer " />
+          <FiSearch className="w-6 h-6 text-[#22202E] cursor-pointer " />
         </div>
 
         {/* Center Section: Logo */}
@@ -33,14 +33,14 @@ export default function Carthead() {
         {/* Right Section: Cart & Account (Desktop) */}
         <div className="hidden lg:flex gap-8 items-center justify-end">
           <Link href="/Cart">
-            <FaShoppingCart className="w-6 h-6 cursor-pointer" />
+            <FaShoppingCart className="w-6 h-6 text-[#22202E] cursor-pointer" />
           </Link>
-          <VscAccount className="w-6 h-6 cursor-pointer" />
+          <VscAccount className="w-6 h-6  text-[#22202E] cursor-pointer" />
         </div>
 
         {/* Right Section: Mobile Icons */}
-        <div className="flex gap-4 lg:hidden">
-          <FiSearch className="w-6 h-6 cursor-pointer" />
+        <div className="flex gap-4 text-[#22202E] lg:hidden">
+          <FiSearch className="w-6 h-6  cursor-pointer" />
           <FiMenu
             className="w-6 h-6 cursor-pointer"
             onClick={toggleSidebar}
@@ -58,14 +58,14 @@ export default function Carthead() {
       {isSidebarOpen && (
         <div className="fixed top-0 left-0 w-[250px] h-full bg-white shadow-lg z-50">
           <div className="flex justify-between items-center p-4">
-            <span className="text-xl font-bold">Menu</span>
+            <span className="text-xl text-[#22202E] font-bold">Menu</span>
             <AiOutlineClose
               className="w-6 h-6 cursor-pointer"
               onClick={toggleSidebar}
             />
           </div>
           <div className="p-4">
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-[#22202E]">
               <li>
                 <Link href="/" onClick={toggleSidebar}>
                   Home

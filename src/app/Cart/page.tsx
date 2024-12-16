@@ -35,7 +35,7 @@ function ShoppingCart() {
     <div className="">
       <Carthead />
       <div className="bg-white w-full max-w-[1064px] mx-auto px-4 py-6">
-        <h2 className="md:text-[36px] text-[32px] font-normal mb-4 text-start">
+        <h2 className="md:text-[36px] text-[32px] font-normal mb-4 text-[#22202E] text-start">
           Your shopping cart
         </h2>
 

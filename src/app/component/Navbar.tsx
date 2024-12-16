@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="hidden lg:flex bg-[#FFFFFF] text-center gap-12 justify-center py-4">
-      <span className="text-sm font-normal">
+      <span className="text-sm text-[#22202E] font-normal">
         <a href="#">Plant Pots</a>
       </span>
       <span className="text-sm font-normal">

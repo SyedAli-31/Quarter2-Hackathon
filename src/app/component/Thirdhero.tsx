@@ -15,7 +15,7 @@ const Thirdhero = () => {
                 height={375}
                 className="md:w-[305px] md:h-[375px] object-cover object-center mb-6"
               />
-              <div className="mt-5 text-start text-[20px] font-normal">
+              <div className="mt-5 text-start text-[20px] text-[#22202E] font-normal">
                 <p>
                   <Link href="/ProdListing" className="hover:text-blue-500 hover:underline  ">
                     The Dandy chair
@@ -28,7 +28,7 @@ const Thirdhero = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[305px] md:h-[375px] p-4">
+            <div className="md:w-[305px] md:h-[375px] text-[#22202E] p-4">
               <Image
                 src="/Parent2.png"
                 alt="content"
@@ -49,7 +49,7 @@ const Thirdhero = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[305px] md:h-[375px] p-4">
+            <div className="md:w-[305px] md:h-[375px] text-[#22202E] p-4">
               <Image
                 src="/parent3.png"
                 alt="content"
@@ -70,7 +70,7 @@ const Thirdhero = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[305px] md:h-[375px] p-4">
+            <div className="md:w-[305px] md:h-[375px] text-[#22202E] p-4">
               <Image
                 src="/parent4.png"
                 alt="content"

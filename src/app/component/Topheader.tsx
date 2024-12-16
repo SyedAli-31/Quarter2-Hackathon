@@ -21,7 +21,7 @@ export default function Topheader() {
       <div className="flex justify-between items-center px-4 mt-2">
         {/* Left Section: Search (Desktop only) */}
         <div className="hidden lg:block">
-          <FiSearch className="w-6 h-6 cursor-pointer" />
+          <FiSearch className="w-6 h-6 cursor-pointer text-[#22202E]" />
         </div>
 
         {/* Center Section: Logo */}
@@ -31,13 +31,13 @@ export default function Topheader() {
 
         {/* Right Section: Mobile Icons */}
         <div className="flex items-center gap-6 mr-8 lg:hidden">
-  <FiSearch className="w-6 h-6 cursor-pointer text-red-500" />
-  <FiMenu className="w-6 h-6 cursor-pointer text-red-500" onClick={toggleSidebar} />
+  <FiSearch className="w-6 h-6 cursor-pointer text-[#22202E]" />
+  <FiMenu className="w-6 h-6 cursor-pointer text-[#22202E]" onClick={toggleSidebar} />
 </div>
 
 
         {/* Right Section: Links (Desktop only) */}
-        <div className="hidden lg:flex gap-8 items-center">
+        <div className="hidden text-[#22202E] lg:flex gap-8 items-center">
           <Link href="/AboutUs">About Us</Link>
           <a href="#">Contact</a>
           <a href="#">Blog</a>
@@ -60,9 +60,9 @@ export default function Topheader() {
       {isSidebarOpen && (
         <div className="fixed top-0 left-0 w-[250px] h-full bg-white shadow-lg z-50">
           <div className="flex justify-between items-center p-4">
-            <span className="text-xl font-bold">Menu</span>
+            <span className="text-xl text-[#22202E] font-bold">Menu</span>
             <AiOutlineClose
-              className="w-6 h-6 cursor-pointer"
+              className="w-6 text-[#22202E] h-6 cursor-pointer"
               onClick={toggleSidebar}
             />
           </div>

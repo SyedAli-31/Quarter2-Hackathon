@@ -22,12 +22,12 @@ const ProdRec = () => {
           />
         </div>
         {/* Text Box */}
-        <div className="bg-[#F9F9F9] w-[340px] md:w-[710px]  h-[800px] md:h-[800px] shadow-lg p-8 flex flex-col md:mt-[60px] mt-0">
-          <h2 className="w-[460px] text-[24px] font-normal text-[#2A254B] md:ml-[92px]">
+        <div className="bg-[#F9F9F9] w-[389px] md:w-[720px]  h-[800px] md:h-[800px] shadow-lg p-8 flex flex-col md:mt-[60px] mt-0">
+          <h2 className="w-[460px] text-[24px] font-normal text-[#2A254B] md:ml-[92px] ml-6  ">
             <span>The Dandy Chair</span> <br />
             <span>£250</span>
           </h2>
-          <div className="w-[200px] md:w-[536px] text-[#2A254B] text-[16px] leading-[27px] mt-6 ml:4 md:ml-[92px]">
+          <div className="w-[200px] md:w-[536px] text-[#2A254B] text-[16px] leading-[27px] mt-6 ml:4 md:ml-[92px] ml-6">
             Description <br />
             <br />A timeless design, with premium materials features as one of
             our most popular and iconic pieces. The dandy chair is perfect for
@@ -50,9 +50,9 @@ const ProdRec = () => {
                 <span>75cm</span>
                 <span>50cm</span>
               </div>
-              <div className="grid md:grid-cols-2 md:mt-[60px]">
+              <div className="grid md:grid-cols-2 md:mt-[60px]  ">
                 <AmountInput />
-                <button className="w-[140px] mt-[30px] md:mt-0 bg-[#2A254B] text-[#FFFFFF] px-6 py-3 shadow hover:bg-red-500 ml-5 md:ml-[92px]">
+                <button className="w-[140px] mt-[30px] md:mt-0 bg-[#2A254B] text-[#FFFFFF] px-6 py-3 shadow hover:bg-red-500 ml-[70px] md:ml-[92px] ">
                   <Link href="/Cart"> Add to cart</Link>
                 </button>
               </div>
