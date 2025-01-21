@@ -96,7 +96,7 @@ const ProductCards: React.FC = () => {
       </div>
       {/* View Collection button */}
       <div className="flex justify-center mt-6">
-        <Link href="/AllProducts">
+        <Link href="/ProdListing">
           <button className="bg-[#e4ee8d] text-[#2A254B] text-lg px-6 py-3 rounded-lg shadow hover:bg-gray-200">
             View Collection
           </button>

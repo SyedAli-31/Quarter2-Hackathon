@@ -1,48 +1,46 @@
+"use client";
 import React, { useState, useEffect } from "react";
+import SanityClient from "@sanity/client";
+import Link from "next/link"; // For navigation
+
+const sanity = SanityClient({
+  projectId: "gvgizwoi",
+  dataset: "production",
+  apiVersion: "2024-01-04",
+  useCdn: true,
+});
+
+interface Category {
+  _id: string;
+  name: string;
+}
 
 const Navbar = () => {
-  const [cartCount, setCartCount] = useState(0); // Track number of items in the cart
+  const [categories, setCategories] = useState<Category[]>([]);
 
+  // Fetch categories from Sanity
   useEffect(() => {
-    // Get cart data from localStorage (assuming it's stored as an array of items)
-    const savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
-    setCartCount(savedCart.length); // Set cart count based on the cart length
+    const fetchCategories = async () => {
+      try {
+        const data = await sanity.fetch<Category[]>(`*[_type == 'category']{
+          _id,
+          name
+        }`);
+        setCategories(data);
+      } catch (error) {
+        console.error("Error Fetching Categories:", error);
+      }
+    };
+    fetchCategories();
   }, []);
 
   return (
     <div className="hidden lg:flex bg-[#FFFFFF] text-center gap-12 justify-center py-4">
-      <span className="text-sm text-[#22202E] font-normal">
-        <a href="#">Plant Pots</a>
-      </span>
-      <span className="text-sm font-normal">
-        <a href="#">Ceramics</a>
-      </span>
-      <span className="text-sm font-normal">
-        <a href="#">Tables</a>
-      </span>
-      <span className="text-sm font-normal">
-        <a href="#">Chairs</a>
-      </span>
-      <span className="text-sm font-normal">
-        <a href="#">Crockery</a>
-      </span>
-      <span className="text-sm font-normal">
-        <a href="#">Tableware</a>
-      </span>
-      <span className="text-sm font-normal">
-        <a href="#">Cutlery</a>
-      </span>
-
-      {/* Cart Icon with Notification Badge */}
-      <div className="relative">
-        <a href="/ShoppingCart">
-          <span className="text-sm font-normal text-[#22202E]">Cart</span>
-          {/* Notification Badge */}
-          
-           
-  
-        </a>
-      </div>
+      {categories.map((category) => (
+        <Link key={category._id} href={`/ProdListing?category=${category.name}`}>
+          <span className="text-sm font-normal">{category.name}</span>
+        </Link>
+      ))}
     </div>
   );
 };
