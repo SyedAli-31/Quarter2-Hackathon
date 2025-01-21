@@ -32,10 +32,17 @@ interface Product {
 const ProdListing = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [categoryName, setCategoryName] = useState<string | null>(null); // Track category name
+  const [category, setCategory] = useState<string | null>(null); // Store category fetched from URL
   const router = useRouter();
-  
-  const category = new URLSearchParams(window.location.search).get("category"); // Get category from URL
-  
+
+  // Fetch category from URL after the component mounts
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const categoryFromURL = new URLSearchParams(window.location.search).get("category");
+      setCategory(categoryFromURL);
+    }
+  }, []);
+
   const fetchProducts = async (category: string | null) => {
     try {
       const query = category
@@ -70,7 +77,6 @@ const ProdListing = () => {
   };
 
   useEffect(() => {
-    // If category changes, update categoryName and fetch new products
     if (category) {
       setCategoryName(category);
       fetchProducts(category);
