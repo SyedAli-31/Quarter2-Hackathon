@@ -35,7 +35,7 @@ const ShoppingCart = () => {
   return (
     <div>
       <Carthead />
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-10 text-black">
         <h1 className="text-3xl font-bold text-center mb-10">YOUR CART</h1>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Product Section */}

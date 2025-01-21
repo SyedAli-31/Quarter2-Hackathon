@@ -78,7 +78,7 @@ const AllProducts = () => {
         height={200}
         className="md:w-[1440px] w-[389px]"
       />
-      <div>
+      <div className="text-black">
         <h1 className="text-center text-2xl font-semibold mb-6">Products</h1>
         {/* Product Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 mx-auto">
@@ -88,8 +88,8 @@ const AllProducts = () => {
               className="product-card border p-4 rounded-lg shadow-md hover:shadow-lg transition"
             >
               <h2 className="text-lg font-medium mb-2">{product.name}</h2>
-              <p className="text-sm text-gray-600 mb-2">{product.description}</p>
-              <p className="font-bold text-xl mb-2">${product.price}</p>
+              {/* <p className="text-sm text-gray-600 mb-2">{product.description}</p> */}
+              
               {product.imageUrl && (
                 <div className="relative w-full h-[200px] mb-4">
                   <Image
@@ -100,9 +100,11 @@ const AllProducts = () => {
                     className="rounded-lg"
                   />
                 </div>
+                
               )}
+              <p className="font-bold text-xl mb-2">${product.price}</p>
               <p className="text-sm text-gray-600 mb-4">
-                <strong>Tags:</strong> {product.tags.join(", ")}
+                <strong>🔥</strong> {product.tags.join(", ")}
               </p>
               <p className="text-sm text-gray-600 mb-4">
                 <strong>Dimensions:</strong> {product.dimensions || "Not Specified"}

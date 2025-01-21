@@ -18,8 +18,8 @@ interface Product {
   slug: {
     current: string;
   };
-  price: number;
-  description: string;
+  // price: number;
+  // description: string;
   imageUrl: string;
   tags: string[];
 }
@@ -58,7 +58,7 @@ const ProductCards: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="text-black">
       <h1 className="text-center text-2xl font-semibold mb-6 ">Products</h1>
       {/* Product Grid Layout with 4 items per row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mx-auto  ">
@@ -68,8 +68,8 @@ const ProductCards: React.FC = () => {
             className="product-card border p-4 rounded-lg shadow-md hover:shadow-lg transition"
           >
             <h2 className="text-lg font-medium mb-2">{product.name}</h2>
-            <p className="text-sm text-gray-600 mb-2">{product.description}</p>
-            <p className="font-bold text-xl mb-2">${product.price}</p>
+            {/* <p className="text-sm text-gray-600 mb-2">{product.description}</p> */}
+            {/* <p className="font-bold text-xl mb-2">${product.price}</p> */}
             {product.imageUrl && (
               <div className="relative w-full h-[200px] mb-4">
                 <Image
@@ -81,7 +81,7 @@ const ProductCards: React.FC = () => {
                 />
               </div>
             )}
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-black mb-4">
               <strong>Tags:</strong> {product.tags.join(", ")}
             </p>
             {/* Add to Cart button */}
