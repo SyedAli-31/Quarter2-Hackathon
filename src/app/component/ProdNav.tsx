@@ -5,10 +5,17 @@ import { FiSearch, FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ProdNav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [cartCount, setCartCount] = useState(0); // State to track number of products in cart
+
+  useEffect(() => {
+    // Check the cart from localStorage and update the cartCount state
+    const savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    setCartCount(savedCart.length); // Set the count based on the cart length
+  }, []);
 
   return (
     <div>
@@ -27,7 +34,17 @@ const ProdNav = () => {
         {/* Icons and Hamburger Menu */}
         <div className="flex gap-4 justify-end items-center mr-4 md:mr-0">
           <FiSearch className="w-[20px] h-[20px] text-[#22202E]" />
-          <FaShoppingCart className="w-[20px] h-[20px] text-[#22202E]" />
+          <Link href="/ShoppingCart">
+            <div className="relative">
+              <FaShoppingCart className="w-6 h-6 text-[#22202E] cursor-pointer" />
+              {/* Notification Badge */}
+              {cartCount > 0 && (
+                <span className="absolute top-[-5px] right-[-5px] bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {cartCount > 9 ? "9+" : cartCount}
+                </span>
+              )}
+            </div>
+          </Link>
           <VscAccount className="w-[20px] h-[20px] text-[#22202E]" />
           {/* Hamburger Icon for Mobile */}
           <FiMenu
@@ -78,4 +95,3 @@ const ProdNav = () => {
 };
 
 export default ProdNav;
-

@@ -6,6 +6,7 @@ import Thirdhero from './component/Thirdhero'
 import Recent from './component/recent'
 import Footer from './component/footer'
 import Image from 'next/image'
+import ProductCards from './Products/page'
 
 const Page = () => {
   return (
@@ -13,7 +14,7 @@ const Page = () => {
       <Topheader/>
       <Hero/>
       <SecHero/>
-      <Thirdhero/>
+      <ProductCards/>
       <Recent/>
       <Image
       src={"/join1.png"}
@@ -22,6 +23,7 @@ const Page = () => {
       height={444}
       className='md:mt-[60px] mt-[30px] md:w-full w-[389px]'
       />
+      
       <Footer/>
     </div>
   )

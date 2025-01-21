@@ -5,14 +5,21 @@ import { FiSearch, FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Carthead() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [cartCount, setCartCount] = useState(0); // Track number of items in the cart
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  useEffect(() => {
+    // Get cart data from localStorage (assuming it's stored as an array of items)
+    const savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    setCartCount(savedCart.length); // Set cart count based on the cart length
+  }, []);
 
   return (
     <div>
@@ -32,15 +39,23 @@ export default function Carthead() {
 
         {/* Right Section: Cart & Account (Desktop) */}
         <div className="hidden lg:flex gap-8 items-center justify-end">
-          <Link href="/Cart">
-            <FaShoppingCart className="w-6 h-6 text-[#22202E] cursor-pointer" />
+          <Link href="/ShoppingCart">
+            <div className="relative">
+              <FaShoppingCart className="w-6 h-6 text-[#22202E] cursor-pointer" />
+              {/* Notification Badge */}
+              {cartCount > 0 && (
+                <span className="absolute top-[-5px] right-[-5px] bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {cartCount > 9 ? "9+" : cartCount}
+                </span>
+              )}
+            </div>
           </Link>
-          <VscAccount className="w-6 h-6  text-[#22202E] cursor-pointer" />
+          <VscAccount className="w-6 h-6 text-[#22202E] cursor-pointer" />
         </div>
 
         {/* Right Section: Mobile Icons */}
         <div className="flex gap-4 text-[#22202E] lg:hidden">
-          <FiSearch className="w-6 h-6  cursor-pointer" />
+          <FiSearch className="w-6 h-6 cursor-pointer" />
           <FiMenu
             className="w-6 h-6 cursor-pointer"
             onClick={toggleSidebar}
@@ -72,8 +87,8 @@ export default function Carthead() {
                 </Link>
               </li>
               <li>
-                <Link href="/Cart" onClick={toggleSidebar}>
-                  Cart
+                <Link href="/ShoppingCart" onClick={toggleSidebar}>
+                  ShoppingCart
                 </Link>
               </li>
               <li>
